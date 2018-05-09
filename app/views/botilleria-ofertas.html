@@ -1,0 +1,28 @@
+<div class="jumbotron">
+    <h1>hola {{botilleria.name}}</h1>
+    <p class="lead">
+        {{botilleria.address}},
+        {{botilleria.phone}}
+    </p>
+</div>
+
+<h2>Crear ofertas</h2>
+<div class="row marketing">
+    <form ng-submit="crearOferta()">
+        <div class="form-group">
+            <label for="ofertaTitle">Título de la oferta</label>
+            <input type="text" class="form-control" id="ofertaTitle" placeholder="Título de la oferta" ng-model="datos.title">
+        </div>
+
+        <div class="form-group">
+            <label for="DecriptionForms">Descripción de la oferta</label>
+            <input type="text" class="form-control" id="DecriptionForm" placeholder="Descripción de la oferta" ng-model="datos.description">
+        </div>
+
+        <div class="form-group">
+            <label for="descuentoForm">Descuento</label>
+            <input type="text" class="form-control" id="descuentoForm" placeholder="Descuento" ng-model="datos.desc">
+        </div>
+        <button type="submit" class="btn btn-default" ng-click="reset()">Enviar</button>
+    </form>
+</div>
